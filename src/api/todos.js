@@ -34,15 +34,6 @@ export function getTodoById(todoId) {
 }
 
 export function deleteTodo(todoId) {
-  //   try {
-  //     await fetch(`${BASE_URL}/todos/${todoId}`, {
-  //       method: "DELETE",
-  //       headers: { accept: "application/json" },
-  //     });
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-
   return new Promise((resolve, reject) => {
     fetch(`${BASE_URL}/todos/${todoId}`, {
       method: "DELETE",
