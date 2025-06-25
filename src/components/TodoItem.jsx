@@ -2,13 +2,13 @@ import { Button } from "./ui/button";
 import { Edit2, Trash2 } from "lucide-react";
 import { Checkbox } from "./ui/checkbox";
 
-function TodoItem() {
+function TodoItem({ item }) {
   return (
     <li className="flex items-center justify-between gap-2">
       {/* Todo item text with checkbox */}
       <div className="flex items-center gap-2">
         <Checkbox className="hover:cursor-pointer w-4 h-4" />
-        <p>This is the first todo item that needs to be done</p>
+        <p>{item}</p>
       </div>
 
       {/* Todo actions */}
