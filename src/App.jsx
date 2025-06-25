@@ -1,10 +1,14 @@
-import { Button } from "./components/ui/button";
+import TodoInput from "./components/TodoInput";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-4xl">App</h1>
-      <Button className="bg-green-600 mt-5">Add Todo</Button>
+    <div className="max-w-md mx-auto mt-10">
+      <h1 className="text-3xl text-center mb-5 font-semibold">
+        React Todo App
+      </h1>
+      <TodoInput />
+      <TodoList />
     </div>
   );
 }
