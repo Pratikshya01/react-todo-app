@@ -81,7 +81,7 @@ export function createTodo(payload) {
         accept: "application/json",
         "content-type": "application/json",
       },
-      body: JSON.stringyfy(payload),
+      body: JSON.stringify(payload),
     })
       .then((res) => {
         return res.json();
