@@ -9,6 +9,7 @@ function TodoInput({ onAddTodo }) {
     const todoValue = todoInputRef.current.value;
     if (todoValue.trim() === "") return;
     onAddTodo(todoValue);
+    todoInputRef.current.value = "";
   };
 
   return (

@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 import { Edit2, Trash2 } from "lucide-react";
 import { Checkbox } from "./ui/checkbox";
 
-function TodoItem({ item }) {
+function TodoItem({ item, deleteTodoItem, id }) {
   return (
     <li className="flex items-center justify-between gap-2">
       {/* Todo item text with checkbox */}
@@ -19,6 +19,7 @@ function TodoItem({ item }) {
         <Button
           variant="destructive"
           className="hover:cursor-pointer hover:bg-red-700"
+          onClick={() => deleteTodoItem(id)}
         >
           <Trash2 />
         </Button>
